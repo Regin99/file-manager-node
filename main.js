@@ -1,7 +1,7 @@
 import { homedir } from 'os';
 import readline from 'readline';
 
-import { changeDirectory, list } from './directory.js';
+import { changeDirectory, list } from './src/directory.js';
 import {
   addFile,
   calculateHash,
@@ -12,8 +12,8 @@ import {
   readFile,
   removeFile,
   renameFile
-} from './files.js';
-import { handleOSInput } from './os.js';
+} from './src/files.js';
+import { handleOSInput } from './src/os.js';
 
 const main = async () => {
   const username = process.argv
